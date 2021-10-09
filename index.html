@@ -69,16 +69,11 @@
       if(liff.getContext().type !== "none" && liff.getContext().type !== "external") {
         await liff.sendMessages ([
           {
-            "type": "sticker",
-            "packageId": 466,
-            "stickerId": 1988
+            "type": "text",
+            "text": "Hi, can send text"
           }
         ])
-        try {
-          alert('messages sent')
-        } catch {
-          alert("none sent")
-        }
+        alert('messages sent')
       }
     }
 
