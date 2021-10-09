@@ -74,7 +74,11 @@
             "stickerId": 1988
           }
         ])
-        alert('messages sent')
+        try {
+          alert('messages sent')
+        } catch {
+          alert("none sent")
+        }
       }
     }
 
